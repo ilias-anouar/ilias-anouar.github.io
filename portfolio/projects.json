@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "title": "Landing page",
+        "label": "Conception & modeling",
+        "cat": "Web Development",
+        "date": "27 Oct. 2022",
+        "cover": "work-3.jpg",
+        "pics": "work-3.jpg",
+        "details": "This project is about designing and creating a landing page that can attract as many potential customers as possible.",
+        "references": [
+            "https://docs.google.com/presentation/d/1E2yDE_2hJZMOcDcwsYpt4VKdjKNOWn0SDuQ2hM5d47w/edit?usp=sharing",
+            "https://docs.google.com/document/d/1zoELsFuN7eUBi8sydmGHPJENb0gdt3FIokn-NEtBbmU/edit?usp=sharing",
+            "https://www.figma.com/file/Vj0wEQtRxPCwJEhbmCSAED/Untitled?node-id=25%3A101"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "JavaScript Workshop",
+        "label": "Training",
+        "cat": "Web Development",
+        "date": "7 Nov. 2022",
+        "cover": "work-4.jpg",
+        "pics": "work-4.jpg",
+        "details": "Developing an interactive educational website that offers JavaScript exercises with answers.",
+        "references": [
+            "https://www.figma.com/file/dThPA560Fjn54BoVYnGCmr/Javascript-Workshop?type=design&mode=design"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Conception solution",
+        "label": "Conception & modeling",
+        "cat": "Web Design",
+        "date": "23 Nov. 2022",
+        "cover": "work-2.jpg",
+        "pics": "work-2.jpg",
+        "details": "The objective is to create a solution that addresses the mismanagement of nearby football pitches by applying the design thinking process.",
+        "references": [
+            "https://www.canva.com/design/DAFU7pk-dlI/4iJU8UqjQJr63tp_3No9Zw/view?utm_content=DAFU7pk-dlI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Modeling solution",
+        "label": "Conception & modeling",
+        "cat": "Web Design",
+        "date": "13 Fev. 2022",
+        "cover": "work-1.jpg",
+        "pics": "work-1.jpg",
+        "details": "Modeling an advertising management system for a real estate agency using the MERISE method and UML language.",
+        "references": [
+            "https://github.com/ilias-anouar/Mini-project-Modelization"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "ads management",
+        "label": "Conception & modeling",
+        "cat": "Web Development",
+        "date": "27 Fev. 2022",
+        "cover": "work-1.jpg",
+        "pics": "work-1.jpg",
+        "details": "Building a web application to manage ads for a real estate agency.",
+        "references": []
+    },
+    {
+        "id": 6,
+        "title": "Recipes application",
+        "label": "Conception & modeling",
+        "cat": "Web Development",
+        "date": "09 Jan. 2023",
+        "cover": "work-5.jpg",
+        "pics": "work-5.jpg",
+        "details": "Web application of cooking recipes using an API",
+        "references": []
+    }
+]

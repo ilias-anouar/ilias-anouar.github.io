@@ -147,10 +147,10 @@
                     For more information check out my CV
                   <div class="row mt-1">
                     <div class="col text-center mb-1">
-                      <a href="#" class="btn btn-primary">ILIAS ANOUAR (EN)</a>
+                      <a href="./CV/CV ILIAS ANOUAR .pdf" class="btn btn-primary">ILIAS ANOUAR (FR)</a>
                     </div>
-                    <div class="col text-center">
-                      <a href="#" class="btn btn-primary">ILIAS ANOUAR (FR)</a>
+                    <div class="col text-center mb-1">
+                      <a href="./CV/CVILIASANOUARen.pdf" class="btn btn-primary">ILIAS ANOUAR (EN)</a>
                     </div>
                   </div>
                   </p>
@@ -323,7 +323,7 @@
   </section>
   <!--/ Section Services End /-->
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/FRONT.png)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -391,7 +391,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
+
+      <div class="row" id="workContainer">
 
         <div class="col-md-4">
           <div class="work-box">
@@ -420,7 +421,6 @@
 
         <div class="col-md-4">
           <div class="work-box">
-            <!-- <a href="img/work-2.jpg" data-lightbox="gallery-mf"> -->
             <div class="work-img">
               <img src="img/work-2.jpg" alt="" class="img-fluid">
             </div>
@@ -434,12 +434,11 @@
                 </div>
                 <div class="col-sm-4">
                   <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
+                    <span class="ion-ios-plus-outline details"></span>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- </a> -->
           </div>
         </div>
 
@@ -703,7 +702,7 @@
   <!--/ Section Blog End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/bac11.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -814,6 +813,29 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
+
+  <!-- / modal start / -->
+  <div class="modal fade" id="projectDetails" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" id="projectBody">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / modal end / -->
+
+
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -830,6 +852,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/render.js"></script>
 
 </body>
 
