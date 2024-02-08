@@ -14,13 +14,13 @@ fetch('../portfolio/projects.json')
               </div>
               <div class="work-content">
                 <div class="row">
-                  <div class="col-sm-8">
+                  <div class="col-8">
                     <h2 class="w-title" data-toggle="tooltip" data-placement="top" title="${project.label}">${project.title}</h2>
                     <div class="w-more">
                       <span class="w-ctegory">${project.cat}</span> / <span class="w-date">${project.date}</span>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col">
                     <div class="w-like">
                       <span class="ion-ios-plus-outline details" data-id="${project.id}"></span>
                     </div>
