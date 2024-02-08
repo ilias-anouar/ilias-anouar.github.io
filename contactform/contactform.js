@@ -90,16 +90,19 @@ jQuery(document).ready(function ($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
+    console.log(str);
     var action = $(this).attr('action');
     if (!action) {
-      action = 'contactform/contactform.php';
+      action = 'contactform/test.php';
+      // action = 'send.js';
     }
     $.ajax({
       type: "POST",
       url: action,
       data: str,
       success: function (msg) {
-        // alert(msg);
+        alert(msg);
+        console.log(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
