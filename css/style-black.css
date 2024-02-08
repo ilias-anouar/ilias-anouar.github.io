@@ -202,7 +202,7 @@ a:hover {
   display: inline-block;
 }
 
-.socials .ico-circle {
+.socials .github {
   height: 40px;
   width: 40px;
   font-size: 1.7rem;
@@ -213,7 +213,83 @@ a:hover {
   transition: all 500ms ease;
 }
 
-.socials .ico-circle:hover {
+.socials .facebook {
+  color: rgb(36, 63, 151);
+  height: 40px;
+  width: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px rgb(36, 63, 151);
+  transition: all 500ms ease;
+}
+
+.socials .instagram {
+  color: rgb(255, 0, 98);
+  height: 40px;
+  width: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px rgb(255, 0, 149);
+  transition: all 500ms ease;
+}
+
+.socials .twitter {
+  color: rgb(0, 174, 255);
+  height: 40px;
+  width: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px rgb(0, 174, 255);
+  transition: all 500ms ease;
+}
+
+.socials .linkedin {
+  color: rgb(0, 137, 201);
+  height: 40px;
+  width: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px rgb(0, 137, 201);
+  transition: all 500ms ease;
+}
+
+.socials .facebook:hover {
+  background-color: rgb(36, 63, 151);
+  color: #fff;
+  box-shadow: 0 0 0 3px #71c0f5;
+  transition: all 500ms ease;
+}
+
+.socials .instagram:hover {
+  background-image: linear-gradient(red, rgb(247, 0, 255));
+  color: #fff;
+  box-shadow: 0 0 0 3px #e9c6dd;
+  transition: all 500ms ease;
+}
+
+.socials .twitter:hover {
+  background-color: rgb(0, 174, 255);
+  color: #fff;
+  box-shadow: 0 0 0 3px #71f1f5;
+  transition: all 500ms ease;
+}
+
+.socials .linkedin:hover {
+  background-color: rgb(0, 137, 201);
+  color: #fff;
+  box-shadow: 0 0 0 3px #10878b;
+  transition: all 500ms ease;
+}
+
+.socials .github:hover {
   background-color: black;
   color: #fff;
   box-shadow: 0 0 0 3px #a5a5a5;
