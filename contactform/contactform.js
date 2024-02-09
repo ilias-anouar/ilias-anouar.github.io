@@ -90,31 +90,60 @@ jQuery(document).ready(function ($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
-    console.log(str);
-    var action = $(this).attr('action');
-    if (!action) {
-      action = 'contactform/test.php';
-      // action = 'send.js';
+    let str1 = 'name=Ilias%20anouar&email=ilyasanouar01%40gmail.com&subject=hey%20this%20is%20a%20test%20can%20u%20check%20it&message=dd'
+    let array = str.split('&')
+    console.log(array);
+    let message = {
+      "name": "",
+      "email": "",
+      "subject": "",
+      "message": ""
     }
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function (msg) {
-        alert(msg);
-        console.log(msg);
-        if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
-
+    array.forEach(element => {
+      switch (element.split('=')[0]) {
+        case "name":
+          message.name = element.split('=')[1].replace('%20', '_')
+          break;
+        case "email":
+          message.email = element.split('=')[1].replace('%40', '@')
+          break;
+        case "subject":
+          message.subject = element.split('=')[1].split('%20').join(' ')
+          break;
+        case "message":
+          message.message = element.split('=')[1].split('%20').join(' ')
+          break;
+        default:
+          console.log("value not defined");
+          break;
       }
     });
+    console.log(message);
+
+    var settings = {
+      "url": "https://portfolio-221y.onrender.com/api/v1/message/save/",
+      "method": "POST",
+      "timeout": 0,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "data": JSON.stringify(message),
+    };
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+      if (response == "Sended successfully") {
+        $("#sendmessage").addClass("show");
+        $("#errormessage").removeClass("show");
+        $('.contactForm').find("input, textarea").val("");
+      } else {
+        $("#sendmessage").removeClass("show");
+        $("#errormessage").addClass("show");
+        $('#errormessage').html(response);
+      }
+    });
+
+
     return false;
   });
 

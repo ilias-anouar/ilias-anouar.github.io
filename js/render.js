@@ -3,11 +3,11 @@ let workWrapper = document.querySelector('#workContainer')
 
 
 fetch('../portfolio/projects.json')
-    .then(r => { return r.json() })
-    .then(d => {
-        let cols = ''
-        d.forEach(project => {
-            cols += `<div class="col-md-4">
+  .then(r => { return r.json() })
+  .then(d => {
+    let cols = ''
+    d.forEach(project => {
+      cols += `<div class="col-md-4">
             <div class="work-box" style="max-height: 300px;">
               <div class="work-img">
                 <img src="img/${project.cover}" alt="Project cover" width="100%" style="min-height: 200px;">
@@ -29,32 +29,32 @@ fetch('../portfolio/projects.json')
               </div>
             </div>
           </div>`
-        });
-        workWrapper.innerHTML = cols
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
+    workWrapper.innerHTML = cols
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
 $(document).on('click', '.details', e => {
-    console.log('test');
-    let id = $(e.target).data('id')
-    fetch('../portfolio/projects.json')
-        .then(r => { return r.json() })
-        .then(d => {
-            let searchedProject
-            for (let i = 0; i < d.length; i++) {
-                if (d[i].id == id) {
-                    searchedProject = d[i]
-                    break
-                }
-            }
-            let links = ''
-            let i = 0
-            searchedProject.references.forEach(link => {
-                i++
-                links += `<div class="col-sm-3"><a class="text-danger" href="${link}">Link ${i}</a></div>`
-            })
-            $('#projectTitle').html(searchedProject.title + ' project details')
-            let card = `<div class="card">
+  console.log('test');
+  let id = $(e.target).data('id')
+  fetch('../portfolio/projects.json')
+    .then(r => { return r.json() })
+    .then(d => {
+      let searchedProject
+      for (let i = 0; i < d.length; i++) {
+        if (d[i].id == id) {
+          searchedProject = d[i]
+          break
+        }
+      }
+      let links = ''
+      let i = 0
+      searchedProject.references.forEach(link => {
+        i++
+        links += `<div class="col-sm-3"><a class="text-danger" href="${link}">Link ${i}</a></div>`
+      })
+      $('#projectTitle').html(searchedProject.title + ' project details')
+      let card = `<div class="card">
             <img class="card-img-top" src="img/${searchedProject.cover}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">${searchedProject.title}</h5>
@@ -64,9 +64,25 @@ $(document).on('click', '.details', e => {
               <p class="card-text"><small class="text-muted">${searchedProject.date}</small></p>
             </div>
           </div>`
-            $('#projectBody').html(card)
+      $('#projectBody').html(card)
 
-            $('#projectDetails').modal('show')
-        })
+      $('#projectDetails').modal('show')
+    })
 })
 
+
+
+fetch('https://api.adviceslip.com/advice')
+  .then(r => { return r.json() })
+  .then(d => {
+    $('#quoteContainer').html(`<h5 class="text-monospace font-weight-bold">'${d.slip.advice}'</h5>`)
+  })
+
+
+$(document).on('click', '#refreshAdvice', e => {
+  fetch('https://api.adviceslip.com/advice')
+    .then(r => { return r.json() })
+    .then(d => {
+      $('#quoteContainer').html(`<h5 class="text-monospace font-weight-bold">'${d.slip.advice}'</h5>`)
+    })
+})
