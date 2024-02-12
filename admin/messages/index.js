@@ -47,7 +47,18 @@ $(document).on('click', '#refreshMessages', e => {
 
 $(document).on('click', '.view', e => {
     let message = $(e.target).data('message')
-    console.log(message);
+    fetch(`https://portfolio-221y.onrender.com/api/v1/message/read/${message}`).then(r => {
+        return r.json()
+    }).then(d => {
+        // console.log(d);
+        // d[0]
+        $('#ModalLabel').html(`${d[0].name} message details :`)
+        $('#name').html(d[0].name)
+        $('#email').html(d[0].email)
+        $('#subject').html(d[0].subject)
+        $('#message').html(d[0].message)
+    })
+    $('#viewMessage').modal('show')
 })
 
 $(document).on('click', '.delete', e => {
