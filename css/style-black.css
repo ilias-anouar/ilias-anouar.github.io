@@ -695,6 +695,7 @@ a:hover {
 
 .intro .intro-title {
   color: #fff;
+  text-shadow: 0px 0px 10px #00ff40;
   font-weight: 600;
   font-size: 3rem;
 }
