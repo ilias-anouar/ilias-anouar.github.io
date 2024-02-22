@@ -36,6 +36,7 @@ a:hover {
 }
 
 .color-d {
+  text-shadow: 5px 5px 10px white;
   color: #00ff40;
 }
 
@@ -432,8 +433,10 @@ a:hover {
   background-image: url(/img/e.gif);
   background-size: cover;
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  /* top: calc(50% - 30px);
+  left: calc(50% - 30px); */
+  top: 50%;
+  left: 50%;
   width: 250px;
   height: 250px;
   /* -webkit-animation: animate-preloader 1s linear infinite;
