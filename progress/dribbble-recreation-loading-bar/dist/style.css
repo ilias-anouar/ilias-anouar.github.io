@@ -1,0 +1,252 @@
+@keyframes grow  {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #26323d;
+  background-image: radial-gradient(transparent 65%, rgba(0, 0, 0, 0.3));
+  font-family: sans-serif;
+}
+
+.progress-bar {
+  position: relative;
+  width: 50vw;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  margin-bottom: 1em;
+}
+
+input {
+  display: none;
+}
+
+label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.progress-bar span{
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.7rem;
+}
+
+.progress-bar span:last-child {
+  float: right;
+}
+
+
+/* HTML PROGRESS BAR */
+label #fill-html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #efeaa388 35%, chocolate);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-html:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/html2.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  background-size: cover;
+}
+
+#html-span {
+  color: chocolate;
+}
+
+/* CSS PROGRESS BAR */
+label #fill-css {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(88, 117, 206, 0.514) 35%, royalBlue);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-css:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/css2.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  background-size: cover;
+}
+
+#css-span {
+  color: royalblue;
+}
+
+/* JS PROGRESS BAR */
+label #fill-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom,rgba(216, 198, 93, 0.548) 35%, gold);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-js:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/js2.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+#js-span {
+  color: gold;
+}
+
+/* PHP PROGRESS BAR */
+label #fill-php {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom,#7a86b88a 35%, #7a86b8);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-php:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/php3.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  background-size: cover;
+}
+
+#php-span {
+  color: #7a86b8;
+}
+
+/* NODE PROGRESS BAR */
+label #fill-node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom,#6fa66081 35%, #6fa660);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-node:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/node.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+#node-span {
+  color: #6fa660;
+}
+
+/* KOTLIN PROGRESS BAR */
+label #fill-kotlin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom,#814af5 35%, #d52a90);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-kotlin:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/kot2.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  background-size: cover;
+}
+
+#kotlin-span {
+  color: #d52a90;
+}
+
+/* PYTHON PROGRESS BAR */
+label #fill-python {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom,blue 35%, yellow);
+  height: 100%;
+  width: 0%;
+}
+
+label #fill-python:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../img/py1.gif);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  background-size: cover;
+}
+
+#python-span {
+  color: yellow;
+}

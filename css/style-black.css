@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kode+Mono:wght@400..700&display=swap');
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -36,7 +38,8 @@ a:hover {
 }
 
 .color-d {
-  text-shadow: 5px 5px 10px white;
+  font-family: "Handjet", sans-serif;
+  text-shadow: 0px 0px 10px white;
   color: #00ff40;
 }
 
@@ -694,6 +697,7 @@ a:hover {
 }
 
 .intro .intro-title {
+  font-family: "Kode Mono", monospace;
   color: #fff;
   text-shadow: 0px 0px 10px #00ff40;
   font-weight: 600;
