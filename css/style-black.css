@@ -43,6 +43,16 @@ a:hover {
   color: #00ff40;
 }
 
+.messageLink {
+  color: #2A80B9;
+  font-size: larger;
+  margin-left: 5px;
+}
+
+.messageLink span {
+  margin-left: 2px;
+}
+
 .color-text-a {
   color: #4e4e4e;
 }
