@@ -6,29 +6,21 @@ fetch('../portfolio/projects.json')
   .then(r => { return r.json() })
   .then(d => {
     let cols = ''
+    console.log(d);
     d.forEach(project => {
       cols += `<div class="col-md-4 mb-3">
-          <div class="work-box" style="max-height: 300px;">
-            <div class="work-img">
-              <img src="img/${project.cover}" alt="Project cover" width="100%" style="min-height: 200px;">
-            </div>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-8">
-                  <h2 class="w-title" data-toggle="tooltip" data-placement="top" title="${project.label}">${project.title}</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">${project.cat}</span> / <span class="w-date">${project.date}</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline details" data-id="${project.id}"></span>
-                  </div>
-                </div>
-              </div>
+      <div class="work-box-costume">
+        <div class="work-content-costume">
+          <img src="img/${project.cover}" alt="work" class="work-box-image">
+          <div class="work-box-details">
+            <p class="work-box-title">${project.title}</p>
+            <div class="work-like">
+              <span class="ion-ios-plus-outline details" data-id="${project.id}"></span>
             </div>
           </div>
-        </div>`
+        </div>
+      </div>
+    </div>`
     });
     workWrapper.innerHTML = cols
     $('[data-toggle="tooltip"]').tooltip()

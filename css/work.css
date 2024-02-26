@@ -1,0 +1,42 @@
+.work-box-costume {
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 0 20px rgb(143, 143, 143);
+    border-radius: 5px;
+    max-height: 200px;
+}
+
+.work-content-costume {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.work-box-image {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    z-index: 9;
+}
+
+.work-like {
+    position: absolute;
+    bottom: 0;
+    font-size: 2.5rem;
+    margin: 0 9px;
+}
+
+.work-box-title{
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.work-box-costume:hover .work-box-image {
+    margin: 3em;
+}
