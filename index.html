@@ -24,6 +24,7 @@
   <link href="css/style-black.css" rel="stylesheet">
   <link href="css/card.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styleProgress.css">
+  <link rel="stylesheet" href="css/blog.css">
   <!-- <link href="css/style.css" rel="stylesheet"> -->
 
 </head>
@@ -54,9 +55,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#work">Work</a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll" href="#blog">Blog</a>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
@@ -214,8 +215,6 @@
     </div>
   </section>
 
-
-
   <!-- / section tech stack  start /-->
   <div class="mb-5">
     <div class="container">
@@ -240,9 +239,6 @@
     </div>
   </div>
   <!-- / section tech stack  end /-->
-
-
-
 
   <!-- / section tech stack  start /-->
   <div class="paralax-mf bg-image" style="background-image: url(img/counter-bg1.jpg)">
@@ -441,7 +437,7 @@
   </div>
 
   <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
+  <section id="work" class="portfolio-mf sect-pt4 route mb-4">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -621,7 +617,6 @@
           <div id="testimonial-mf" class="owl-carousel owl-theme">
             <div class="testimonial-box">
               <div class="author-test">
-                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
                 <span class="author">Xavi Alonso</span>
               </div>
               <div class="content-test">
@@ -634,7 +629,6 @@
             </div>
             <div class="testimonial-box">
               <div class="author-test">
-                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
                 <span class="author">Marta Socrate</span>
               </div>
               <div class="content-test">
@@ -650,10 +644,22 @@
       </div>
     </div>
   </div> -->
+  <!--/ Section Testimonials end /-->
 
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/js.gif)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <p id="js-pp">JavaScript for everything</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--/ Section Blog Star /-->
-  <!-- <section id="blog" class="blog-mf sect-pt4 route">
+  <section id="blog" class="blog-mf sect-pt4 route mb-4">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -668,103 +674,46 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row blogsContainer">
         <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div>
+          <div class="blog-card">
+            <a href="#" class="blog-card-link"><img src="img/post-1.jpg" alt="" class="blog-card-image">
+              <div class="card-blog-content">
+                <p class="card-blog-title">This<br>is a test</p>
+                <p class="card-blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minus
+                  doloribus.</p>
+                <p class="card-blog-label">10/12/2023</p>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
+          <div class="blog-card">
+            <a href="#" class="blog-card-link"><img src="img/post-2.jpg" alt="" class="blog-card-image">
+              <div class="card-blog-content">
+                <p class="card-blog-title">This<br>is a test</p>
+                <p class="card-blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minus
+                  doloribus.</p>
+                <p class="card-blog-label">10/12/2023</p>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
+          <div class="blog-card">
+            <a href="#" class="blog-card-link"><img src="img/post-3.jpg" alt="" class="blog-card-image">
+              <div class="card-blog-content">
+                <p class="card-blog-title">This<br>is a test</p>
+                <p class="card-blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minus
+                  doloribus.</p>
+                <p class="card-blog-label">10/12/2023</p>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!--/ Section Blog End /-->
 
   <!--/ Section Contact-Footer Star /-->

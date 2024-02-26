@@ -34,6 +34,38 @@ fetch('../portfolio/projects.json')
     $('[data-toggle="tooltip"]').tooltip()
   })
 
+
+fetch('../portfolio/blogs.json')
+  .then(r => { return r.json() })
+  .then(d => {
+    let Blogs = ""
+    for (let i = 0; i < d.length; i++) {
+      Blogs += blogTemplate(d[i])
+    }
+    $('.blogsContainer').html(Blogs)
+  })
+
+const blogTemplate = (data) => {
+  console.log(data);
+  let title, image, disc, date, id
+  id = data.id
+  title = data.title
+  image = data.cover
+  disc = data.description
+  date = data.date
+  return `<div class="col-md-4">
+  <div class="blog-card">
+    <a href="./blog-single.html?${id}" class="blog-card-link"><img src="img/${image}" alt="" class="blog-card-image">
+      <div class="card-blog-content">
+        <p class="card-blog-title">${title}</p>
+        <p class="card-blog-text">${disc}</p>
+        <p class="card-blog-label">${date}</p>
+      </div>
+    </a>
+  </div>
+</div>`
+}
+
 $(document).on('click', '.details', e => {
   console.log('test');
   let id = $(e.target).data('id')

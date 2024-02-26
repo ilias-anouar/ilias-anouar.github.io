@@ -1447,6 +1447,19 @@ footer .credits a {
 
 /* cube end */
 
+
+/* js pp start */
+#js-pp {
+  font-family: "Kode Mono", monospace;
+  font-size: 4em;
+  font-weight: 900;
+  background-image: url(/img/javaS.gif);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* js pp end */
+
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;

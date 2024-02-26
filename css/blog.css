@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.blog-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+    font-family: "Nunito", sans-serif;
+}
+
+.blog-card-image {
+    width: 100%;
+    background-size: cover;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.10);
+    }
+}
+
+.card-blog-content {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: calc(100% - 30px);
+    margin: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+
+.card-blog-title {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(/img/js2.gif);
+}
+
+.card-blog-text {
+    font-size: 12px;
+}
+
+.card-blog-label {
+    color: grey;
+    font-size: x-small;
+}
+
+@media only screen and (max-width: 1200px) {
+    .card-blog-content {
+        padding: 15px;
+    }
+
+    .card-blog-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .card-blog-text {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .card-blog-content {
+        padding: 10px;
+    }
+
+    .card-blog-title {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
+    .card-blog-text {
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-card {
+        margin-bottom: 1em;
+    }
+
+    .card-blog-title {
+        font-size: 2em;
+    }
+
+    .card-blog-text {
+        font-size: 15px;
+    }
+}

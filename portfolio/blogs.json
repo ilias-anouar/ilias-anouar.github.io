@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1",
+    "title": "The Blog title",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.excepturi esse illum tempora.",
+    "date": "10/12/2023",
+    "cover": "post-1.jpg",
+    "content": {
+      "author": "Ilias anouar",
+      "category": "Web design",
+      "tags": ["Web", "Design", "Javascript"],
+      "sections": {
+        "p-1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?",
+        "p-2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?",
+        "p-3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?"
+      }
+    }
+  },
+  {
+    "id": "2",
+    "title": "this blog title",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.excepturi esse illum tempora.",
+    "date": "10/12/2023",
+    "cover": "post-3.jpg",
+    "content": {
+      "author": "Ilias anouar",
+      "category": "Web design",
+      "tags": ["Web", "Design", "Javascript"],
+      "sections": {
+        "p-1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?",
+        "p-2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?",
+        "p-3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?"
+      }
+    }
+  },
+  {
+    "id": "3",
+    "title": "last blog title",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.excepturi esse illum tempora.",
+    "date": "10/12/2023",
+    "cover": "post-3.jpg",
+    "content": {
+      "author": "Ilias anouar",
+      "category": "Web design",
+      "tags": ["Web", "Design", "Javascript"],
+      "sections": {
+        "p-1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?",
+        "p-2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?",
+        "p-3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat voluptates laudantium corporis eos! Blanditiis eveniet porro exercitationem, molestiae animi fugit perspiciatis, id, non ipsum rem cupiditate ut sapiente repudiandae?"
+      }
+    }
+  }
+]
