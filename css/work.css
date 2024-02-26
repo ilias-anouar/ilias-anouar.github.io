@@ -1,7 +1,7 @@
 .work-box-costume {
     overflow: hidden;
     width: 100%;
-    box-shadow: 0 0 20px rgb(143, 143, 143);
+    box-shadow: 0 0 20px 5px rgb(131, 131, 131);
     border-radius: 5px;
     max-height: 200px;
 }
@@ -20,7 +20,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     border-radius: 5px;
     z-index: 9;
 }
