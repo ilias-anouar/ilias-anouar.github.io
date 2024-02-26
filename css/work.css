@@ -32,11 +32,31 @@
     margin: 0 9px;
 }
 
-.work-box-title{
+.work-box-title {
     margin-top: 3%;
     font-weight: bold;
 }
 
 .work-box-costume:hover .work-box-image {
     margin: 3em;
+}
+
+@media only screen and (max-width: 998px) {
+    .work-box-costume {
+        max-height: 250px;
+    }
+
+    .work-content-costume {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .work-box-costume {
+        max-height: 300px;
+    }
+
+    .work-content-costume {
+        height: 300px;
+    }
 }
