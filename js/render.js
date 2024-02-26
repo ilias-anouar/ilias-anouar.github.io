@@ -46,7 +46,6 @@ fetch('../portfolio/blogs.json')
   })
 
 const blogTemplate = (data) => {
-  console.log(data);
   let title, image, disc, date, id
   id = data.id
   title = data.title
