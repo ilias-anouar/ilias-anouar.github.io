@@ -83,7 +83,7 @@ $(document).on('click', '.details', e => {
               <h5 class="card-title">${searchedProject.title}</h5>
               <p class="card-text">${searchedProject.details}</p>
               <h6 class="card-title">References</h6>
-              <div class="row mb-2">${links}</div>
+              <div class="row mb-2">${links == '' ? "there is no reference" : links}</div>
               <p class="card-text"><small class="text-muted">${searchedProject.date}</small></p>
             </div>
           </div>`
