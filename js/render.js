@@ -6,7 +6,6 @@ fetch('../portfolio/projects.json')
   .then(r => { return r.json() })
   .then(d => {
     let cols = ''
-    console.log(d);
     d.forEach(project => {
       cols += `<div class="col-md-4 mb-3">
       <div class="work-box-costume">
@@ -58,7 +57,6 @@ const blogTemplate = (data) => {
 }
 
 $(document).on('click', '.details', e => {
-  console.log('test');
   let id = $(e.target).data('id')
   fetch('../portfolio/projects.json')
     .then(r => { return r.json() })

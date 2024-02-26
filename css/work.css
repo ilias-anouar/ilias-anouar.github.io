@@ -30,6 +30,7 @@
     bottom: 0;
     font-size: 2.5rem;
     margin: 0 9px;
+    cursor: pointer;
 }
 
 .work-box-title {
