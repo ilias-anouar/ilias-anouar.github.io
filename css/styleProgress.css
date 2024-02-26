@@ -8,27 +8,14 @@
   }
 }
 
-/* html,
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background: #26323d;
-  background-image: radial-gradient(transparent 65%, rgba(0, 0, 0, 0.3));
-  font-family: sans-serif;
-} */
-
-.progress-bar-skills {
-  /* position: relative;
+/* .progress-bar-skills {
+  position: relative;
   width: 50vw;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0); */
+  transform: translate3d(-50%, -50%, 0);
   margin-bottom: 1em;
-}
+} */
 
 input {
   display: none;
