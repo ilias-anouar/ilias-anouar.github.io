@@ -65,10 +65,10 @@ a:hover {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
-.box-shadow-a,
+/* .box-shadow-a,
 .button:hover {
   box-shadow: 0 0 0 4px #919191;
-}
+} */
 
 .display-5 {
   font-size: 2.5rem;
@@ -1225,7 +1225,7 @@ footer .credits a {
   font-size: 1rem;
   border-radius: .3rem;
   border: 1px solid transparent;
-  transition: all 500ms ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -1236,7 +1236,12 @@ footer .credits a {
 .button:hover {
   background-color: #5c5c5c;
   color: #fff;
-  transition: all 500ms ease;
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .button-a {
