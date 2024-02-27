@@ -516,7 +516,7 @@ a:hover {
   bottom: 0;
   left: 0;
   height: 2px;
-  transition: all 500ms ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-b.navbar-trans .nav-link:hover,
@@ -526,7 +526,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link:hover:before,
 .navbar-b.navbar-reduce .nav-link:hover:before {
-  width: 35px;
+  width: 20px;
 }
 
 .navbar-b.navbar-trans .show>.nav-link:before,
@@ -537,7 +537,9 @@ a:hover {
 .navbar-b.navbar-reduce .active>.nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
-  width: 35px;
+  box-shadow: 0px 0px 35px 5px #00a80e;
+  background-color: #00a80e;
+  width: 40px;
 }
 
 .navbar-b.navbar-trans .nav-link:before {
@@ -1225,7 +1227,8 @@ footer .credits a {
   font-size: 1rem;
   border-radius: .3rem;
   border: 1px solid transparent;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   cursor: pointer;
 }
 
@@ -1234,9 +1237,10 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #5c5c5c;
-  color: #fff;
-  transition: all 0.3s ease;
+  /* background-color: #5C5B75; */
+  background-color: #eee;
+  color: black;
+  box-shadow: 5px 5px 0px 0px black;
 }
 
 .button:active {
@@ -1251,12 +1255,12 @@ footer .credits a {
 }
 
 .button-big {
-  padding: .9rem 2.3rem;
+  padding: 0.7rem 3.3rem;
   font-size: 1.2rem;
 }
 
 .button-rouded {
-  border-radius: 5rem;
+  border-radius: 0rem;
 }
 
 .btn-lg {
