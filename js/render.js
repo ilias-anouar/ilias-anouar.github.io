@@ -7,7 +7,7 @@ fetch('../portfolio/projects.json')
   .then(d => {
     let cols = ''
     d.forEach(project => {
-      cols += `<div class="col-md-4 mb-3">
+      cols += `<div class="col-md-4 my-1 px-1">
       <div class="work-box-costume">
         <div class="work-content-costume">
           <img src="img/${project.cover}" alt="work" class="work-box-image">
@@ -43,7 +43,7 @@ const blogTemplate = (data) => {
   image = data.cover
   disc = data.description
   date = data.date
-  return `<div class="col-md-4 mb-2">
+  return `<div class="col-md-4 my-1 px-1">
   <div class="blog-card">
     <a href="./blog-single.html?${id}" class="blog-card-link"><img src="img/${image}" alt="" class="blog-card-image">
       <div class="card-blog-content">
