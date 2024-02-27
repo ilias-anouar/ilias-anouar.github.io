@@ -12,12 +12,12 @@
     width: 100%;
     background-size: cover;
     transition: all 0.3s ease;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .card-blog-content {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     height: calc(100% - 30px);
     margin: 15px;
     left: 0;

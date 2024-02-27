@@ -43,7 +43,7 @@ const blogTemplate = (data) => {
   image = data.cover
   disc = data.description
   date = data.date
-  return `<div class="col-md-4">
+  return `<div class="col-md-4 mb-2">
   <div class="blog-card">
     <a href="./blog-single.html?${id}" class="blog-card-link"><img src="img/${image}" alt="" class="blog-card-image">
       <div class="card-blog-content">

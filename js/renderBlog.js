@@ -34,7 +34,7 @@ const blogTemplate = (data) => {
         tags += `<li><a href="#">${tag}.</a></li>`
     });
 
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 20; i++) {
         let paragraph = data.content.sections[`p-${i}`]
         console.log(paragraph);
         if (paragraph == undefined) {
