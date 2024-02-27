@@ -10,12 +10,15 @@ if (id != undefined) {
             let searchedBlog
             for (let i = 0; i < d.length; i++) {
                 if (d[i].id == id) {
-                    console.log(d[i]);
                     searchedBlog = d[i]
                     break
                 }
             }
-            document.querySelector('.blogContainer').innerHTML = blogTemplate(searchedBlog)
+            if (searchedBlog != undefined) {
+                document.querySelector('.blogContainer').innerHTML = blogTemplate(searchedBlog)
+            } else {
+                document.querySelector('.blogContainer').innerHTML = `<div class="row text-center"><div class="col"><h1>No Content</h1></div></div>`
+            }
         })
 
 } else {
@@ -36,13 +39,13 @@ const blogTemplate = (data) => {
 
     for (let i = 1; i < 20; i++) {
         let paragraph = data.content.sections[`p-${i}`]
-        console.log(paragraph);
         if (paragraph == undefined) {
             break
         } else {
             paragraphs += `<p>${paragraph}</p>`
         }
     }
+    document.querySelector('#labeled').innerHTML = title
     return `<div class="row">
         <div class="col-md-8">
             <div class="post-box">
