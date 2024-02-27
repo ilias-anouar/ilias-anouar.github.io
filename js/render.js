@@ -7,7 +7,7 @@ fetch('../portfolio/projects.json')
   .then(d => {
     let cols = ''
     d.forEach(project => {
-      cols += `<div class="col-md-4 my-1 px-1">
+      cols += `<div class="col-md-4 my-2 px-2">
       <div class="work-box-costume">
         <div class="work-content-costume">
           <img src="img/${project.cover}" alt="work" class="work-box-image">

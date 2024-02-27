@@ -57,10 +57,7 @@
     background-color: white;
 }
 
-.blog-card:hover .card-blog-text {
-    display: block;
-}
-
+.blog-card:hover .card-blog-text,
 .blog-card:hover .card-blog-label {
     display: block;
 }
